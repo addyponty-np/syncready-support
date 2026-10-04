@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get help with SyncReady scans, reviewed repairs, Undo, recovery records, and the Microsoft Store Pro upgrade.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Support — SyncReady</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap topbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✓</span> SyncReady</a>
+    <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <main class="wrap" id="main">
+    <article class="article">
+      <p class="eyebrow">A little help</p>
+      <h1>Let's find your next step.</h1>
+      <p class="lead">Start with the answers below. If something still feels wrong, tell us what happened without sharing your private files.</p>
+      <div class="notice"><p><strong>First release in preparation.</strong> SyncReady is being prepared for Microsoft Store. This guide describes the app's features; a Store download and purchase offer are not yet available from this site.</p></div>
+
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details open><summary>Will scanning change my files?</summary><p>No. Scanning reads names, paths, and filesystem metadata. A rename happens only after you select items, review the exact proposed changes, and choose Rename. SyncReady does not read file contents or upload them.</p></details>
+        <details><summary>What does a clean scan mean?</summary><p>No issues were found among the checks and items the scan completed. It is not a guarantee that a cloud service or another application will accept everything. If you stop a scan or some folders cannot be inspected, its results are incomplete. Review any skipped-item messages.</p></details>
+        <details><summary>Why are cloud files or linked folders skipped?</summary><p>Links, junctions, and some cloud-managed items use special filesystem attributes. SyncReady does not follow these locations or repair them automatically. This prevents a scan or rename from affecting a location you did not select. A scan may therefore leave parts of a managed cloud folder uninspected, even if they appear in File Explorer.</p></details>
+        <details><summary>Why is a suggested repair unavailable?</summary><p>Some findings need a decision that a rename cannot safely make: for example, a long parent path, a temporary file, an ambiguous collision, or an unavailable cloud item. Read the explanation for that finding. Resolve it in the relevant app or File Explorer, then scan again. SyncReady never deletes files, overwrites another item, or merges folders as a repair.</p></details>
+        <details><summary>How do I undo a rename?</summary><p>Open Repair history, select the recorded repair, and choose Undo. SyncReady checks the current file identity, metadata, and original destination before restoring names. If files have moved, changed, or another item now occupies a destination, Undo may stop. Keep the recovery folder and its authentication key; history and Undo for completed repairs are available without Pro.</p></details>
+        <details><summary>A repair stopped or the app closed. What now?</summary><p>Reopen SyncReady and review Repair history before making more changes. The app saves a recovery record before renaming and does not automatically modify your files when reopened. Use the recorded status and Undo where available. If a conflict is reported, keep the recovery files and describe the error code to support without uploading the recovery records.</p></details>
+        <details><summary>What is included in Free and Pro?</summary><p>Free includes unlimited Windows and Windows + OneDrive scans, five individual evaluation renames, and recovery history and Undo for performed repairs. Pro is an optional one-time Microsoft Store purchase for bulk repair, additional compatibility profiles, migration preview, custom thresholds and excluded checks, CSV reports, and scanning several folders in one session. Pro is not a subscription.</p></details>
+        <details><summary>How many names can I repair at once?</summary><p>You can review up to 1,000 changes per folder in a transaction with Pro. This keeps the durable recovery record manageable. For more changes, rescan and review another batch. Scanning itself is not limited to 1,000 items.</p></details>
+        <details><summary>Does migration preview move my files?</summary><p>No. It calculates possible paths under the destination you enter and checks those names and paths. It does not copy, move, sync, or upload files. A separate cloud path-length check requires the actual decoded OneDrive or SharePoint destination folder path; a sharing link is not the same thing.</p></details>
+        <details><summary>I bought Pro, but it does not appear active.</summary><p>Check that Microsoft Store is signed in to the account used for the purchase, connect to the internet, and choose Restore purchase in SyncReady. Availability and the displayed price come from Microsoft Store. If the Store is temporarily unavailable, scanning and Undo remain available. Before the Store release and Pro offer are configured, purchasing is unavailable.</p></details>
+        <details><summary>Which Windows computers does the app target?</summary><p>The initial release targets 64-bit Intel or AMD PCs running Windows 10 version 2004 (build 19041) or later, including Windows 11. Native ARM64 release verification is pending. Consult the Microsoft Store listing's system requirements when the release becomes available.</p></details>
+      </div>
+
+      <h2>Share a problem safely</h2>
+      <ol>
+        <li>Describe what you were trying to do and the steps that led to the problem. Use made-up sample filenames when useful.</li>
+        <li>Include the SyncReady version, Windows version, and the displayed error code. Do not include account credentials or payment details.</li>
+        <li>If a diagnostic report is needed, open Help in the app and leave <strong>Include file and folder paths in this report</strong> unchecked before choosing <strong>Export diagnostics</strong>. Open and review the saved report before sharing it.</li>
+      </ol>
+      <p><strong>GitHub issues are public.</strong> Do not attach private filenames, folder paths, documents, recovery records, authentication keys, or unreviewed logs. You need a GitHub account to open an issue. You do not need one to use SyncReady's local features.</p>
+      <div class="actions"><a class="button" href="https://github.com/addyponty-np/syncready-support/issues">Open the support tracker</a><a href="privacy.html">Read the privacy policy</a></div>
+      <p class="subtle">Support is provided by junocity. SyncReady is independent and is not affiliated with Microsoft or any cloud storage provider. OneDrive and SharePoint are trademarks of their respective owner.</p>
+    </article>
+  </main>
+  <footer><div class="wrap footer-inner"><p>SyncReady · Published by junocity</p><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></div></div></footer>
+</body>
+</html>
